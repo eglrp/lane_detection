@@ -42,12 +42,26 @@ def getfirstline(filename,source,angle):
 	cv2.line(bg, p1, p2, 255)
 	img = getacross(img,mat,bg,s)
 	return img
+def getlineroi(img):
+	img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+	l = np.array([0, 0, 180])
+	h = np.array([255, 25, 255])
+	mask = cv2.inRange(img, l, h)
+	l = cv2.bitwise_and(img, img, mask=mask)
+	l = cv2.cvtColor(l, cv2.COLOR_HSV2BGR)
+	return l
 	
 if __name__ == '__main__':
 	img1 = getfirstline('mat.txt','0000000022.png',158)
 	img2 = getfirstline('mat31.txt','0000000031.png',156)
 	img3 = getfirstline('mat51.txt','0000000051.png',164)
 	img4 = getfirstline('mat79.txt','0000000079.png',158)
+	
+	img1 = getlineroi(img1)
+	img2 = getlineroi(img2)
+	img3 = getlineroi(img3)
+	img4 = getlineroi(img4)
+	
 	fig = plt.figure() 
 	ax = fig.add_subplot(221)
 	ax.set_xticks([])
@@ -66,10 +80,7 @@ if __name__ == '__main__':
 	ax.set_yticks([])
 	ax.imshow(img4)
 	plt.show()
-'''
-		cv2.imshow('dd',bg)	
-		time.sleep(0.42)
-		if cv2.waitKey(1) & 0xFF == ord('q'):
-			break
-	cv2.destroyAllWindows()
-'''
+	cv2.imwrite("first22.png", img1)
+	cv2.imwrite("first31.png", img2)
+	cv2.imwrite("first51.png", img3)
+	cv2.imwrite("first79.png", img4)
