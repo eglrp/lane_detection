@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import os
 import load
+# 这里就是获取图像中间的有效区域
 def getpitch(img):
 	img[:225-30,:]= [0,0,0]
 	img[:,:100]=[0,0,0]
