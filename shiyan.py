@@ -9,7 +9,9 @@ while i < len(l):
 	while (l[i]+step*2) in l:
 		ele.append(l[i+step])
 		step = step + 1
+		print(step)
 	# 这里把ele插入返回的列表中
 	result.append(ele)
 	i = i + step
+print(l)
 print(result)
