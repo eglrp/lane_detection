@@ -180,6 +180,6 @@ this is a lane detection model based on KITTI model
 现在已经能够得到清晰的最左侧车道线了，明天决定一下接下来用霍夫变换还是用最小二乘法或者是什么回归
 ![选择随机几帧图像得到的最左侧车道线](https://github.com/catpanda/lane_detection/blob/master/figure_3.png)
 ## 聚类提取其他车道线信息
-（暂时保密）
+![这结果我非常满意](https://github.com/catpanda/lane_detection/blob/master/result.png)
 ## 实验结果
 
