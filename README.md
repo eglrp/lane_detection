@@ -182,4 +182,4 @@ this is a lane detection model based on KITTI model
 ## 聚类提取其他车道线信息
 ![这结果我非常满意](https://github.com/catpanda/lane_detection/blob/master/result.png)
 ## 实验结果
-
+日常签到，论文和专利申请的赶紧写了，百度一放大招就毁了
