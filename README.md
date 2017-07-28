@@ -5,6 +5,10 @@ this is a lane detection model based on KITTI model
 
 基于KITTI数据集实现，现在还在分步骤实现中，所以数据啥的都不上传了吧，处于保密需要，以目前完成的部分来看准确度还是非常不错的，速度也比较快，事后会完全上传。
 ![kitti数据集中的一张图，看上去很规整，可是实际上因为光照的原因如果直接找边界会挺难处理的](https://github.com/catpanda/lane_detection/blob/master/drive/0000000000.png)
+## 概述
+近年来，随着汽车工业和物联网技术的不断发展，驾驶辅助系统等开始受到企业和研究人员的重视。作为智慧交通的重要组成部分【基于动态感兴趣区域的光照无关车道线检测算法】，驾驶辅助系统能够对车辆行驶过程中的偏移、障碍物等事件进行决策并能够主动进行响应以保证驾驶安全。车道线检测能够根据采集到的数据给出准确的车道线位置数据，是驾驶辅助系统进行决策的基础【结构化道路上应用区域划分的车道线识别】。
+
+经过许多研究人员和业界人士的努力，已经提出了许多用于进行车道线检测方法，如基于激光雷达【基于激光雷达回波信号的自适应阈值车道线检测】、借助深度学习将声波与多目视觉进行结合【Multi-View 3D Object Detection Network for Autonomous Driving，Robust Lane Detection Based On Convolutional Neural Network and Random Sample Consensus】、基于单目视觉【一种基于改进Hough变换的车道线检测算法】等。其中，基于单目视觉的车道线检测方法由于成本低廉而且对其他方法具有基础借鉴作用一直是研究人员关注的热点。
 
 ## 图像预处理
 （暂时保密）
