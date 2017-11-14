@@ -12,6 +12,8 @@ this is a lane detection model based on KITTI model
 
 ## 图像预处理
 （暂时保密）
+##
+![神经网络](https://github.com/catpanda/lane_detection/blob/master/new/graph-large_attrs_key=_too_large_attrs&limit_attr_size=1024&run=%20(4).png?raw=true)
 ## 改进的Hough变换算法
 （暂时保密）
 ## 识别左侧车道线
@@ -187,7 +189,7 @@ this is a lane detection model based on KITTI model
 ![这结果我非常满意](https://github.com/catpanda/lane_detection/blob/master/result.png)
 ## 实验结果
 日常签到，论文和专利申请的赶紧写了，百度一放大招就毁了
-
+![结果](https://github.com/catpanda/lane_detection/blob/master/new/%E8%AE%BA%E6%96%87%E7%94%A8%E5%88%B0%E7%9A%84%E5%9B%BE.png?raw=true)
 今天把之前用scikit包里面全连接网络的部分用CNN搞了一下，结果效果非常鬼畜，二分类问题迭代了几次以后准确度是20%多是几个意思？
 
 刚才把CNN的参数改了改，主要是卷积和改成了3，然后mxapoll做了点修改，迭代差不多500次的时候 准确率到98%左右了，非常满意
