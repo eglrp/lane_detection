@@ -195,4 +195,5 @@ this is a lane detection model based on KITTI model
 刚才把CNN的参数改了改，主要是卷积和改成了3，然后mxapoll做了点修改，迭代差不多500次的时候 准确率到98%左右了，非常满意
 ## 日志
 2017-7-5 把专利交底书提交上去了
+
 2017-11-11 论文投出，希望能中
