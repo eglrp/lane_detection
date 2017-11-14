@@ -1,0 +1,3 @@
+class Baocuo:
+    
+b = Baocuo()
